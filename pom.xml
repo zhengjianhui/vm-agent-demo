@@ -6,7 +6,12 @@
 
     <groupId>com.zjh.demo.agent</groupId>
     <artifactId>vm-agent-demo</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>vm-agent</module>
+        <module>agent-test</module>
+    </modules>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -17,7 +22,6 @@
     </properties>
 
     <build>
-        <finalName>accounting-bill-client</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
